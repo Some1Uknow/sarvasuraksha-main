@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUser, FaLock } from 'react-icons/fa';
+import { FaCheckCircle, FaLock, FaUserShield } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -44,11 +44,10 @@ const Home = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="max-w-lg">
             <h2 className="text-4xl font-bold text-blue-900 mb-6 leading-tight">
-              Simplify Official Document Verification
+              Simplifying Government Document Verification for Everyone
             </h2>
             <p className="text-gray-700 text-lg mb-8">
-              No more waiting in long lines! Use our secure and automated platform to verify birth certificates,
-              academic records, and more.
+              Secure and fast document verification for birth certificates, academic records, and more—helping you avoid the hassle of manual verification processes.
             </p>
             <Link
               to="/signup"
@@ -61,53 +60,91 @@ const Home = () => {
           {/* Banner Image */}
           <div className="hidden lg:block">
             <img
-              src="https://www.digilocker.gov.in/assets/img/drive_hasslefree.svg"
+              src="/main.webp"
               alt="Document Verification"
-              className="h-72"
+              className="h-80"
             />
           </div>
         </div>
       </section>
 
-      {/* New in Our System */}
-      <section className="p-16 bg-gray-100">
+      {/* How It Works Section */}
+      <section className="bg-gray-100 p-16">
         <div className="container mx-auto text-center">
-          <h3 className="text-3xl font-bold text-blue-900 mb-10">New in Our System</h3>
+          <h3 className="text-3xl font-bold text-blue-900 mb-8">How It Works</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="bg-white shadow-lg rounded-lg p-8 text-center">
-              <img
-                src="https://www.digilocker.gov.in/assets/img/documents/certificate.svg"
-                alt="Service 1"
-                className="h-24 mx-auto mb-6"
-              />
-              <h4 className="text-lg font-bold mb-2">Academic Certificates</h4>
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <FaUserShield className="text-blue-900 text-5xl mx-auto mb-4" />
+              <h4 className="text-lg font-bold mb-2">Step 1: Upload Document</h4>
               <p className="text-gray-600">
-                Get your academic certificates verified easily with our automated service.
+                Easily upload your official documents for verification through our secure platform.
               </p>
             </div>
 
-            <div className="bg-white shadow-lg rounded-lg p-8 text-center">
-              <img
-                src="https://www.digilocker.gov.in/assets/img/documents/id-card.svg"
-                alt="Service 2"
-                className="h-24 mx-auto mb-6"
-              />
-              <h4 className="text-lg font-bold mb-2">Identification Cards</h4>
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <FaCheckCircle className="text-green-500 text-5xl mx-auto mb-4" />
+              <h4 className="text-lg font-bold mb-2">Step 2: Automatic Review</h4>
               <p className="text-gray-600">
-                Verify official identification documents in just a few clicks.
+                Our system connects with the relevant authority to validate the document's authenticity.
               </p>
             </div>
 
-            <div className="bg-white shadow-lg rounded-lg p-8 text-center">
-              <img
-                src="https://www.digilocker.gov.in/assets/img/documents/license.svg"
-                alt="Service 3"
-                className="h-24 mx-auto mb-6"
-              />
-              <h4 className="text-lg font-bold mb-2">Professional Licenses</h4>
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <FaLock className="text-blue-900 text-5xl mx-auto mb-4" />
+              <h4 className="text-lg font-bold mb-2">Step 3: Secure Verification</h4>
               <p className="text-gray-600">
-                Verify professional licenses such as medical and engineering certifications.
+                Receive verified documents and share them securely with any organization.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="bg-white p-16">
+        <div className="container max-w-7xl mx-auto text-center">
+          <h3 className="text-3xl font-bold text-blue-900 mb-8">Why Choose Us?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="flex items-center">
+            
+              <div>
+                <h4 className="text-lg font-bold">100% Secure and Private</h4>
+                <p className="text-gray-600">
+                  We use state-of-the-art encryption to ensure your documents are safe.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center">
+          
+              <div>
+                <h4 className="text-lg font-bold">Fast & Reliable</h4>
+                <p className="text-gray-600">
+                  Get your documents verified within minutes, saving you time and effort.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* User Testimonials */}
+      <section className="bg-gray-100 p-16">
+        <div className="container mx-auto text-center">
+          <h3 className="text-3xl font-bold text-blue-900 mb-8">What Our Users Say</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <p className="text-gray-700 italic mb-4">
+                "This platform made my life so much easier! I was able to verify my academic certificates in no time, and the process was incredibly simple."
+              </p>
+              <h4 className="text-lg font-bold">- Priya K.</h4>
+            </div>
+
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <p className="text-gray-700 italic mb-4">
+                "I highly recommend this service to anyone needing document verification. It's secure, fast, and completely reliable."
+              </p>
+              <h4 className="text-lg font-bold">- Arjun S.</h4>
             </div>
           </div>
         </div>

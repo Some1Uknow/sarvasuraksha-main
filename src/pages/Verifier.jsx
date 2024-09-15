@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const VerifierDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto py-10 px-6">
+      <div className="container max-w-7xl mx-auto py-10 px-6">
         {/* Dashboard Title */}
         <h1 className="text-3xl font-bold text-blue-900 mb-6">Verifier Dashboard</h1>
 
