@@ -13,6 +13,7 @@ import InProgress from "./components/InProgress";
 import VerifierDashboard from "./pages/Verifier";
 import MyDocuments from "./pages/MyDocs";
 import Profile from "./pages/Profile";
+import DocumentRequests from "./pages/DocumentRequests";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
     path: "/pending-verifications",
     element: <PendingVerifications />,
   },
+  {
+    path: "/document-requests",
+    element: <DocumentRequests />,
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

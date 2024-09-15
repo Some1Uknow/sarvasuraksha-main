@@ -30,7 +30,7 @@ const Home = () => {
               Sign In
             </Link>
             <Link
-              to="/signup"
+              to="/login"
               className="bg-yellow-500 text-blue-900 font-bold px-4 py-2 rounded transition-all hover:bg-yellow-600"
             >
               Sign Up
@@ -50,7 +50,7 @@ const Home = () => {
               Secure and fast document verification for birth certificates, academic records, and more—helping you avoid the hassle of manual verification processes.
             </p>
             <Link
-              to="/signup"
+              to="/login"
               className="bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition-all"
             >
               Get Started
