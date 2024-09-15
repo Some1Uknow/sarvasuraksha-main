@@ -26,7 +26,7 @@ const Dashboard = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/logout" className="flex items-center text-white hover:bg-red-700 py-2 px-3 rounded">
+                <Link to="/" className="flex items-center text-white hover:bg-red-700 py-2 px-3 rounded">
                   <FaSignOutAlt className="mr-2" /> Logout
                 </Link>
               </li>
