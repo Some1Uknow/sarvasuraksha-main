@@ -13,6 +13,7 @@ import InProgress from "./components/InProgress";
 import VerifierDashboard from "./pages/Verifier";
 import MyDocuments from "./pages/MyDocs";
 import Profile from "./pages/Profile";
+import Analytics from "./pages/Analytics";
 import DocumentRequests from "./pages/DocumentRequests";
 
 const router = createBrowserRouter([
@@ -58,7 +59,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/analytics",
-    element: <InProgress />,
+    element: <Analytics/>,
   },
   {
     path: "/pending-verifications",

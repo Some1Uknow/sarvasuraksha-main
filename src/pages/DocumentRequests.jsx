@@ -3,10 +3,15 @@ import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 const DocumentRequests = () => {
   const [requests] = useState([
-    { id: 1, documentName: 'Birth Certificate', requester: 'John Doe', status: 'Pending' },
-    { id: 2, documentName: 'Class X Marksheet', requester: 'Jane Smith', status: 'Approved' },
-    { id: 3, documentName: 'Driving License', requester: 'Mike Johnson', status: 'Pending' },
-  ]);
+    { id: 1, documentName: 'Birth Certificate', requester: 'Rahul Sharma', status: 'Pending' },
+    { id: 2, documentName: 'Class X Marksheet', requester: 'Priya Gupta', status: 'Approved' },
+    { id: 3, documentName: 'Driving License', requester: 'Kunal Jain', status: 'Pending' },
+    { id: 4, documentName: 'Passport', requester: 'Sonia Singh', status: 'Rejected' },
+    { id: 5, documentName: 'Aadhaar Card', requester: 'Rohan Patel', status: 'Approved' },
+    { id: 6, documentName: 'Voter ID', requester: 'Neha Agarwal', status: 'Pending' },
+    { id: 7, documentName: 'PAN Card', requester: 'Amit Kumar', status: 'Approved' },
+    { id: 8, documentName: 'Utility Bill', requester: 'Swati Mishra', status: 'Rejected' },
+]);
 
   const handleApprove = (id) => {
     // Implement the logic to approve the request here

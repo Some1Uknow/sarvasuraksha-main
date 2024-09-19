@@ -5,6 +5,9 @@ const PendingVerifications = () => {
   const [pendingDocuments, setPendingDocuments] = useState([
     { id: 1, documentName: 'Academic Transcript', userName: 'John Doe', date: '12/08/2023', status: 'Pending', aiScore: null, analysis: '', previewUrl: 'https://example.com/transcript-preview.pdf' },
     { id: 2, documentName: 'Birth Certificate', userName: 'Jane Smith', date: '11/08/2023', status: 'Pending', aiScore: null, analysis: '', previewUrl: 'https://example.com/birth-cert-preview.pdf' },
+    { id: 3, documentName: 'Pan Card', userName: 'Rahul Kumar', date: '10/08/2023', status: 'Pending', aiScore: null, analysis: '', previewUrl: 'https://example.com/pan-card-preview.pdf' },
+    { id: 4, documentName: 'Aadhaar Card', userName: 'Priya Sharma', date: '09/08/2023', status: 'Pending', aiScore: null, analysis: '', previewUrl: 'https://example.com/aadhaar-card-preview.pdf' },
+    { id: 5, documentName: 'Passport', userName: 'Rohan Jain', date: '08/08/2023', status: 'Pending', aiScore: null, analysis: '', previewUrl: 'https://example.com/passport-preview.pdf' },
   ]);
   
   const [loadingDoc, setLoadingDoc] = useState(null);
