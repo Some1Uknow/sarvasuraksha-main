@@ -17,7 +17,7 @@ const Home = () => {
             />
             <div>
               <h1 className="font-bold text-lg">Government of India</h1>
-              <h2 className="text-sm">Savasuraksha Verification System</h2>
+              <h2 className="text-sm">SmartDoc Verification System</h2>
             </div>
           </div>
 
